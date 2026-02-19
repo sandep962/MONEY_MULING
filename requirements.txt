@@ -4,3 +4,8 @@ numpy
 networkx
 pyvis
 scipy
+streamlit==1.42.1
+pandas==2.2.3
+networkx==3.4.2
+pyvis==0.3.2
+numpy==2.2.3v

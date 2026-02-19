@@ -20,11 +20,11 @@ A powerful, modular Python application that detects complex financial fraud ring
 
 The system is broken down into five core modules:
 
-1.  **`app.py`**: The Streamlit dashboard. Connects the UI to the underlying engines.
-2.  **`fraud_detector.py`**: **`The algorithmic brains. Contains the time-window sliding algorithms, DFS pathfinding, and NetworkX cycle detection to identify the 4 key fraud patterns`**.
-3.  **`graph_processor.py`**: Calculates mathematical network metrics (like PageRank, In/Out degrees) and constructs the core NetworkX `MultiDiGraph`.
-4.  **`visualizer.py`**: Translates the mathematical graph into a color-coded, interactive HTML visualization.
-5.  **`data_manager.py`**: Handles CSV ingestion, column normalization, and data type formatting.
+1. **app.py: The Streamlit dashboard. Connects the UI to the underlying engines.**
+2. **fraud_detector.py: The algorithmic brains. Contains the time-window sliding algorithms, DFS pathfinding, and NetworkX cycle detection to identify the 4 key fraud patterns.**
+3. **graph_processor.py: Calculates mathematical network metrics (like PageRank, In/Out degrees) and constructs the core NetworkX `MultiDiGraph`.**
+4. **visualizer.py: Translates the mathematical graph into a color-coded, interactive HTML visualization.**
+5. **data_manager.py: Handles CSV ingestion, column normalization, and data type formatting.**
 
 ---
 
@@ -77,5 +77,6 @@ The system accepts CSV files loosely mapping to standard transaction logs. Examp
 | FRAUD_A    | MULE_2      | 4800.0 | 2025-08-01 09:06:00 |
 
 *(The `data_manager.py` module automatically normalizes column names like `sender id` -> `sender`.)*
+
 
 

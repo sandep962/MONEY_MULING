@@ -1,8 +1,8 @@
-# Graph-Based Fraud Detection System 🛡️
+# Graph-Based Fraud Detection System
 
 A powerful, modular Python application that detects complex financial fraud rings using relational graph algorithms. Unlike traditional machine learning models that rely on isolated, tabular features, this engine analyzes the *structural flow of money* to catch coordinated evasion tactics like laundering chains and circular flows.
 
-## 🌟 Key Features
+##  Key Features
 
 *   **Zero-Label Detection**: Automatically detects fraud patterns in raw, unlabeled transaction data. No pre-trained model or `is_fraud` labels required.
 *   **Four Algorithmic Detection Engines**:
@@ -16,7 +16,7 @@ A powerful, modular Python application that detects complex financial fraud ring
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The system is broken down into five core modules:
 
@@ -28,7 +28,7 @@ The system is broken down into five core modules:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ pip install streamlit pandas networkx pyvis
 
 ---
 
-## 📊 Using the Dashboard
+##  Using the Dashboard
 
 1. **Upload Data**: Use the sidebar to upload a CSV file containing transaction data. 
    *(Required columns: `sender`, `receiver`, `amount`, `timestamp`)*.
@@ -66,7 +66,7 @@ pip install streamlit pandas networkx pyvis
 
 ---
 
-## 📝 Example CSV Format
+##  Example CSV Format
 
 The system accepts CSV files loosely mapping to standard transaction logs. Example format:
 
@@ -77,3 +77,4 @@ The system accepts CSV files loosely mapping to standard transaction logs. Examp
 | FRAUD_A    | MULE_2      | 4800.0 | 2025-08-01 09:06:00 |
 
 *(The `data_manager.py` module automatically normalizes column names like `sender id` -> `sender`.)*
+

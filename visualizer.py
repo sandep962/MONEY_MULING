@@ -1,6 +1,7 @@
 from pyvis.network import Network
 import tempfile
 import os
+import pandas as pd
 
 # Color scheme for fraud types
 FRAUD_COLORS = {
